@@ -1,0 +1,89 @@
+﻿@using WebCarBy.Models;
+@model IndexViewModel
+<body>
+    <div class="wrapper">
+        <section class="section">
+            <div class="container">
+                <header class="header">
+                    <span class="header__text">Choose your dream car!</span>
+                    <div class="header__image">
+                        <img class="image__car" src="~/images/car.jpg" alt="car">
+                    </div>
+                </header>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="cars">
+                    <div class="cars__block">
+                        <div class="block__height">
+                            <div class="cars__block-text">Our cars</div>
+                            <div class="cars__list">
+                                <ul class="cars__spisok">
+                                    <li class="car__elem">
+                                        <div class="car__elem--image">
+                                            <img class="image__car" src="~/images/bmw.jpg"
+                                                 alt="car">
+                                        </div>
+                                        <div class="car__elem--text">BMW</div>
+                                        <div class="car__elem--text">6 mln</div>
+                                        <div class="btn__select">
+                                            <a href="~/Home/AddCar?carname=Bmw" class="buy">Select</a>
+                                        </div>
+                                    </li>
+                                    <li class="car__elem">
+                                        <div class="car__elem--image">
+                                            <img class="image__car" src="~/images/Lada.jpg"
+                                                 alt="car">
+                                        </div>
+                                        <div class="car__elem--text">Lada</div>
+                                        <div class="car__elem--text">1 mln</div>
+                                        <div class="btn__select">
+                                            <a href="~/Home/AddCar?carname=Lada" class="buy">Select</a>
+                                        </div>
+                                    </li>
+                                    <li class="car__elem">
+                                        <div class="car__elem--image">
+                                            <img class="image__car" src="~/images/opel.jpg"
+                                                 alt="car">
+                                        </div>
+                                        <div class="car__elem--text">Opel</div>
+                                        <div class="car__elem--text">4 mln</div>
+                                        <div class="btn__select">
+                                            <a href="~/Home/AddCar?carname=Opel" class="buy">Select</a>
+                                        </div>
+                                    </li>                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars__block">
+                        <div class="block__height">
+                            <div class="cars__block-text">Your Cart</div>
+                            <div class="cars__list">
+                                <ul class="cars__spisok--buy">
+                                    @foreach(string car in Model.NameList)
+                                    {
+                                      <li class="car__elem--buy">
+                                        <div class="car__elem--text">@car</div>
+                                      </li>
+                                    }
+                                    
+                                </ul>
+                                <div class="btn__cart">
+                                    <div class="cars__block-text">Amount: @Model.Amount mln</div>
+                                    <div class="btn__select">
+                                        <a href="~/Home/ClearCart" class="buy">Buy</a>
+                                    </div>
+                                    <div class="btn__select">
+                                        <a href="~/Home/ClearCart" class="buy">Clear</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>

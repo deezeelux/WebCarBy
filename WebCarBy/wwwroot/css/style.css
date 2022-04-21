@@ -1,0 +1,131 @@
+/*Основное*/
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #b6a9c1;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn__select {
+    width: 125px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #b6a9c1;
+    box-shadow: 0 0 4px #fff;
+    transition: .3s box-shadow;
+    margin-bottom: 10px;
+}
+
+/*Шапка*/
+.header__text {
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+.header__image {
+    width: 125px;
+    height: 110px;
+    margin: auto;
+    padding: 0;
+}
+
+.image__car {
+    width: 125px;
+    height: 110px;
+    border-radius: 35px;
+    margin-top: 10px;
+}
+
+/*Секция с покупкой*/
+.cars {
+    display: flex;
+}
+
+.cars__block {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 570px;
+}
+
+.block__height {
+    height: 570px;
+}
+
+.cars__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 445px;
+}
+
+.cars__spisok {
+    padding: 0;
+    margin: 0;
+    height: 445px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.car__elem {
+    margin: 0 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car__elem--text {
+    margin-bottom: 10px;
+}
+
+.cars__block-text {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/*Корзина*/
+.cars__spisok--buy {
+    padding: 0;
+}
+
+.btn__cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcCarByBack";
+
+package carbybackservice;
+
+service CarByService { 
+	// Три метода grpc-сервиса
+  rpc ClearCart (Empty) returns (StatusResponse);
+  rpc AddCar (Car) returns (StatusResponse);
+  rpc GetData (Empty) returns (DataModel);
+}
+
+message DataModel{
+	// 1 и 2 - порядок, в котором данные будут отправлены на фронт
+	int32 amount = 1;
+	repeated string cars = 2; // Список машин
+}
+message Car{
+	string name = 1;
+}
+message StatusResponse{
+	bool status = 1;
+}
+message Empty {
+}

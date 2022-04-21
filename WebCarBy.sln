@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCarBy", "WebCarBy\WebCarBy.csproj", "{865FF069-DAFB-4FEB-99BB-52EB21DC1C0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcCarByBack", "GrpcCarByBack\GrpcCarByBack.csproj", "{875D3B5D-9D8C-42CA-9AAC-D4FCC36E7B21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{865FF069-DAFB-4FEB-99BB-52EB21DC1C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865FF069-DAFB-4FEB-99BB-52EB21DC1C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865FF069-DAFB-4FEB-99BB-52EB21DC1C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865FF069-DAFB-4FEB-99BB-52EB21DC1C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875D3B5D-9D8C-42CA-9AAC-D4FCC36E7B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875D3B5D-9D8C-42CA-9AAC-D4FCC36E7B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875D3B5D-9D8C-42CA-9AAC-D4FCC36E7B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875D3B5D-9D8C-42CA-9AAC-D4FCC36E7B21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79BF5140-CDC2-4DE0-A9F0-8640D04F5AD0}
+	EndGlobalSection
+EndGlobal
